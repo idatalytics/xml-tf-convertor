@@ -45,6 +45,10 @@ createFolder('C:\\Users\\manik\\Downloads\\Cloud-Terraform\\')
 print("Step-1: Project Folder Created")
 
 root = ET.parse('C:\\Users\\manik\\Downloads\\UntitledDiagram.xml')
+
+#root = ET.parse ('https://github.com/idatalytics/euclid-azure-draw.io/blob/edc202ccd3414c08e217f23e6a3116a7ccea33d9/Untitled%20Diagram.drawio.xml')
+
+
 #temperature = root.find('.//object')
 for temp in root.findall('.//object'):
     resource = temp.get("label")
