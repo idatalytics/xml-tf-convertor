@@ -1,0 +1,23 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.2.32630.192
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{888888A0-9F3D-457C-B088-3A5042F75D52}") = "xml-tf-convertor", "xml-tf-convertor\xml-tf-convertor.pyproj", "{1DD34454-52DF-491C-846A-596B1E30187F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1DD34454-52DF-491C-846A-596B1E30187F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1DD34454-52DF-491C-846A-596B1E30187F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {F945C256-A8EC-4DEF-B48F-1003DA076599}
+	EndGlobalSection
+EndGlobal
