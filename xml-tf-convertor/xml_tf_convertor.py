@@ -44,7 +44,7 @@ def createFolder(directory):
 createFolder('C:\\Users\\manik\\Downloads\\Cloud-Terraform\\')
 print("Step-1: Project Folder Created")
 
-root = ET.parse('C:\\Users\\manik\\Downloads\\UntitledDiagram.xml')
+root = ET.parse('/var/lib/jenkins/workspace/euclid-pipeline/euclid-azure-draw.io/UntitledDiagram.xml')
 
 #root = ET.parse ('https://github.com/idatalytics/euclid-azure-draw.io/blob/edc202ccd3414c08e217f23e6a3116a7ccea33d9/Untitled%20Diagram.drawio.xml')
 
@@ -55,7 +55,7 @@ for temp in root.findall('.//object'):
     if str(resource) == 'Cloud':
          #createFolder('C:\\Users\\manik\\Downloads\\Cloud-Terraform\\provider')
          #print ("Step-2: Provider Folder Created")
-         path = 'C:\\Users\\manik\\Downloads\\Cloud-Terraform'
+         path = '/var/lib/jenkins/workspace/euclid-pipeline/testing'
          file = "provider.tf"
          with open(os.path.join(path, file), 'w') as fp:
              fp.write('terraform { \n')
@@ -79,7 +79,7 @@ for temp in root.findall('.//object'):
              pass
                           
     elif str(resource) == 'Resource Group':
-         path = 'C:\\Users\\manik\\Downloads\\Cloud-Terraform'
+         path = '/var/lib/jenkins/workspace/euclid-pipeline/testing'
          file = "main.tf"
          name = temp.get ("name")
          location = temp.get("location")
@@ -89,7 +89,7 @@ for temp in root.findall('.//object'):
              fp.write('location =' + '"'+ location + '"\n')
              fp.write('}')
              fp.close
-             createFolder('C:\\Users\\manik\\Downloads\\Cloud-Terraform\\resource-group')
+             createFolder('/var/lib/jenkins/workspace/euclid-pipeline/testing')
          print("Its Resource group")
     else:
         print("Its not working")
